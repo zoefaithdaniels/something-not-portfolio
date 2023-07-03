@@ -1,10 +1,28 @@
 <template>
-  <nav>
+  <nav class="background">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link>|
+    <router-link to="/Resume">Resume</router-link>|
+    <router-link to="/Skills">Skills</router-link>|
+    <router-link to="/Testimonials">Testimonials</router-link>|
+    <router-link to="/Projects">Projects</router-link>|
+    <router-link to="/Contact">Contact</router-link>|
   </nav>
+
   <router-view/>
+  <Footer>
+
+  </Footer>
+
 </template>
+<script>
+import Footer from '@/components/Footer.vue'
+export default{
+  components:{
+    Footer
+  }
+}
+</script>
 
 <style>
 #app {
@@ -12,7 +30,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: whitesmoke;
 }
 
 nav {
@@ -21,10 +39,13 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: whitesmoke;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: crimson;
+}
+.background{
+  background-color: black;
 }
 </style>

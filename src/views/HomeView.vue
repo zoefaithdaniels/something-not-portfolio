@@ -16,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.home{
+background-color: black;
+}
+</style>
